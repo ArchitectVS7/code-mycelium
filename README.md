@@ -1,5 +1,8 @@
 # 🍄 Code Mycelium
 
+[![GitHub](https://img.shields.io/github/license/ArchitectVS7/code-mycelium)](https://github.com/ArchitectVS7/code-mycelium/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/ArchitectVS7/code-mycelium)](https://github.com/ArchitectVS7/code-mycelium)
+
 **Reveal hidden connections in your codebase like mycelial networks in a forest.**
 
 ## Concept

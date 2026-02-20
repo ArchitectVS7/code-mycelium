@@ -1,0 +1,45 @@
+
+🍄 Code Mycelium
+Analyzing: /root/.openclaw/workspace/code-mycelium/examples/sample-codebase
+
+🍄 Building mycelial network...
+
+Found 6 files to analyze
+
+🔗 Computing semantic similarity...
+
+✓ Network built successfully
+
+
+═══════════════════════════════════════
+   🍄 CODE MYCELIUM NETWORK
+═══════════════════════════════════════
+
+📊 Network Stats:
+   Nodes: 19
+   Connections: 23
+
+🔥 Hub Nodes (highly connected):
+   └─ formatDate (examples/sample-codebase/utils/helpers.js)
+      3 connections
+
+   └─ validateEmail (examples/sample-codebase/utils/helpers.js)
+      3 connections
+
+   └─ generateId (examples/sample-codebase/utils/helpers.js)
+      3 connections
+
+   └─ hashString (examples/sample-codebase/utils/helpers.js)
+      3 connections
+
+   └─ authenticateUser (examples/sample-codebase/auth/login.js)
+      3 connections
+
+🔗 Semantic Clusters (similar code):
+   ┌─ examples/sample-codebase/api/posts.js ↔ examples/sample-codebase/api/users.js
+   │  fetchPostsFromDatabase ↔ fetchFromDatabase
+   │  Similarity: 85.3%
+   │
+
+═══════════════════════════════════════
+
