@@ -48,7 +48,12 @@ node src/cli.js analyze /path/to/codebase --output graph.json
 npm run demo
 ```
 
-## Example Output
+## Demo
+
+![Code Mycelium demo](demo.svg)
+
+<details>
+<summary>View plain-text output</summary>
 
 ```
 ═══════════════════════════════════════
@@ -69,9 +74,9 @@ npm run demo
 🔗 Semantic Clusters (similar code):
    ┌─ examples/sample-codebase/api/posts.js ↔ examples/sample-codebase/api/users.js
    │  fetchPostsFromDatabase ↔ fetchFromDatabase
-   │  Similarity: 85.3%
+   │  Similarity: 55.6%
    │
-   
+
    ⚠️  Potential DRY violation detected!
 
 👻 Orphaned Code (no connections):
@@ -81,6 +86,8 @@ npm run demo
 
 ═══════════════════════════════════════
 ```
+
+</details>
 
 ## How It Works
 
@@ -155,7 +162,7 @@ Uses Babel parser to extract:
 "If I change this function, what else breaks?"
 
 ### 2. DRY Violation Detection
-"Is this code duplicated somewhere?" → 85% semantic match found
+"Is this code duplicated somewhere?" → semantic match found
 
 ### 3. Architecture Audit
 "What's the *actual* architecture?" → Emergent clusters reveal organic structure
@@ -189,7 +196,7 @@ async function fetchFromDatabase(table, query) {
 }
 ```
 
-**Mycelium detects:** 85.3% similarity → Suggests extracting to shared helper
+**Mycelium detects:** 55.6% similarity → Suggests extracting to shared helper
 
 ### Hub Node (Over-centralization)
 ```

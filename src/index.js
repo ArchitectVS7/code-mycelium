@@ -186,10 +186,23 @@ export class CodeMycelium {
    */
   buildSemanticConnections() {
     console.log('🔗 Computing semantic similarity...\n');
-    
-    // Generate simple word-frequency embeddings
+
     const allNodes = Array.from(this.nodes.values());
-    
+
+    // First pass: build the complete vocabulary from all nodes so that every
+    // embedding vector is generated against the same fixed vocabulary.
+    // Without this, vocabulary grows incrementally per call and vectors end up
+    // with different lengths, producing invalid cosine similarity results.
+    this.vocabulary = new Set();
+    for (const node of allNodes) {
+      const tokens = node.code.toLowerCase()
+        .replace(/[^\w\s]/g, ' ')
+        .split(/\s+/)
+        .filter(t => t.length > 2);
+      for (const t of tokens) this.vocabulary.add(t);
+    }
+
+    // Second pass: generate embeddings with the now-stable vocabulary
     for (const node of allNodes) {
       this.embeddings.set(node.id, this.simpleEmbed(node.code));
     }
@@ -205,8 +218,10 @@ export class CodeMycelium {
         
         const similarity = cosineSimilarity(embA, embB);
         
-        // Only connect if highly similar
-        if (similarity > 0.7 && nodeA.location !== nodeB.location) {
+        // Only connect if meaningfully similar across different files.
+        // Threshold is 0.55 to match the corrected full-corpus vocabulary
+        // (the original 0.7 was calibrated against the buggy per-node vocabulary).
+        if (similarity > 0.55 && nodeA.location !== nodeB.location) {
           this.addConnection(nodeA.id, nodeB.id, 'semantic', similarity);
         }
       }
@@ -214,7 +229,8 @@ export class CodeMycelium {
   }
 
   /**
-   * Simple embedding: word frequency vector
+   * Simple embedding: word frequency vector over a pre-built vocabulary.
+   * Vocabulary must be populated before calling (done by buildSemanticConnections).
    * (In production, would use OpenAI/Anthropic embeddings)
    */
   simpleEmbed(code) {
@@ -223,25 +239,21 @@ export class CodeMycelium {
       .replace(/[^\w\s]/g, ' ')
       .split(/\s+/)
       .filter(t => t.length > 2); // Skip short tokens
-    
-    // Build vocabulary from all unique tokens
-    if (!this.vocabulary) {
-      this.vocabulary = new Set();
-    }
-    tokens.forEach(t => this.vocabulary.add(t));
-    
+
     // Count frequency
     const freq = new Map();
     for (const token of tokens) {
       freq.set(token, (freq.get(token) || 0) + 1);
     }
-    
-    // Convert to fixed-size vector (top 100 most common words in vocabulary)
-    const vocabArray = Array.from(this.vocabulary).slice(0, 100);
+
+    // Project onto fixed vocabulary so all vectors have the same length.
+    // Vocabulary is built once (in buildSemanticConnections) before any
+    // embeddings are generated — this guarantees consistent vector dimensions.
+    const vocabArray = Array.from(this.vocabulary || []).slice(0, 100);
     const vector = vocabArray.map(word => freq.get(word) || 0);
-    
+
     // Normalize
-    const magnitude = Math.sqrt(vector.reduce((sum, v) => sum + v*v, 0));
+    const magnitude = Math.sqrt(vector.reduce((sum, v) => sum + v * v, 0));
     return magnitude > 0 ? vector.map(v => v / magnitude) : vector;
   }
 

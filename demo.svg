@@ -1,0 +1,254 @@
+<svg width="680" height="783" viewBox="0 0 680 783"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- ── Window chrome ─────────────────────────────────── -->
+  <rect width="680" height="783" rx="10" fill="#0d1117"/>
+  <rect width="680" height="36" rx="10" fill="#161b22"/>
+  <rect width="680" height="8" y="28" fill="#161b22"/>
+  <rect x="0.5" y="0.5" width="679" height="782" rx="9.5"
+        fill="none" stroke="#30363d" stroke-width="1"/>
+
+  <!-- traffic lights -->
+  <circle cx="18" cy="18" r="6" fill="#ff5f56"/>
+  <circle cx="38" cy="18" r="6" fill="#ffbd2e"/>
+  <circle cx="58" cy="18" r="6" fill="#27c93f"/>
+
+  <!-- window title -->
+  <text x="340" y="23" fill="#6e7681"
+        font-family="'SFMono-Regular',Consolas,monospace" font-size="12"
+        text-anchor="middle">bash — code-mycelium</text>
+
+  <!-- ── Terminal content ───────────────────────────────── -->
+  <text x="20" y="69" fill="#58a6ff"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.02660;0.02667;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    $ node src/cli.js analyze examples/sample-codebase
+  </text>
+  <text x="20" y="88" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.05327;0.05333;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    &#160;
+  </text>
+  <text x="20" y="107" fill="#3fb950"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.07327;0.07333;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    🍄 Building mycelial network...
+  </text>
+  <text x="20" y="126" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.08660;0.08667;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    &#160;
+  </text>
+  <text x="20" y="145" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.09993;0.10000;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+      Found 6 files to analyze
+  </text>
+  <text x="20" y="164" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.11327;0.11333;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    &#160;
+  </text>
+  <text x="20" y="183" fill="#79c0ff"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.12660;0.12667;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    🔗 Computing semantic similarity...
+  </text>
+  <text x="20" y="202" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.15327;0.15333;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    &#160;
+  </text>
+  <text x="20" y="221" fill="#3fb950"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.17327;0.17333;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    ✓ Network built successfully
+  </text>
+  <text x="20" y="240" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.19327;0.19333;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    &#160;
+  </text>
+  <text x="20" y="259" fill="#6e7681"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.20660;0.20667;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    ═══════════════════════════════════════
+  </text>
+  <text x="20" y="278" fill="#f0883e"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.21660;0.21667;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+       🍄 CODE MYCELIUM NETWORK
+  </text>
+  <text x="20" y="297" fill="#6e7681"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.22660;0.22667;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    ═══════════════════════════════════════
+  </text>
+  <text x="20" y="316" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.23660;0.23667;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    &#160;
+  </text>
+  <text x="20" y="335" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.24327;0.24333;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    📊 Network Stats:
+  </text>
+  <text x="20" y="354" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.25327;0.25333;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+       Nodes: 19
+  </text>
+  <text x="20" y="373" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.26327;0.26333;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+       Connections: 23
+  </text>
+  <text x="20" y="392" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.27327;0.27333;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    &#160;
+  </text>
+  <text x="20" y="411" fill="#ff7b72"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.27993;0.28000;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    🔥 Hub Nodes (highly connected):
+  </text>
+  <text x="20" y="430" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.28993;0.29000;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+       └─ formatDate (utils/helpers.js)
+  </text>
+  <text x="20" y="449" fill="#6e7681"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.29993;0.30000;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+          3 connections
+  </text>
+  <text x="20" y="468" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.30993;0.31000;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+       └─ authenticateUser (auth/login.js)
+  </text>
+  <text x="20" y="487" fill="#6e7681"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.31993;0.32000;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+          3 connections
+  </text>
+  <text x="20" y="506" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.32993;0.33000;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    &#160;
+  </text>
+  <text x="20" y="525" fill="#79c0ff"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.33660;0.33667;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    🔗 Semantic Clusters (similar code):
+  </text>
+  <text x="20" y="544" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.34660;0.34667;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+       ┌─ api/posts.js ↔ api/users.js
+  </text>
+  <text x="20" y="563" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.35660;0.35667;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+       │  fetchPostsFromDatabase ↔ fetchFromDatabase
+  </text>
+  <text x="20" y="582" fill="#3fb950"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.36660;0.36667;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+       │  Similarity: 55.6%
+  </text>
+  <text x="20" y="601" fill="#6e7681"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.37660;0.37667;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+       │
+  </text>
+  <text x="20" y="620" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.38327;0.38333;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    &#160;
+  </text>
+  <text x="20" y="639" fill="#d29922"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.38993;0.39000;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+       ⚠️  Potential DRY violation detected!
+  </text>
+  <text x="20" y="658" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.39993;0.40000;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    &#160;
+  </text>
+  <text x="20" y="677" fill="#8b949e"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.40660;0.40667;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    👻 Orphaned Code (no connections):
+  </text>
+  <text x="20" y="696" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.41660;0.41667;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+       └─ legacyLogin (legacy/oldAuth.js:6)
+  </text>
+  <text x="20" y="715" fill="#d29922"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.42660;0.42667;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+       ⚠️  These may be unused or entry points
+  </text>
+  <text x="20" y="734" fill="#c9d1d9"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.43993;0.44000;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    &#160;
+  </text>
+  <text x="20" y="753" fill="#6e7681"
+        font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
+        font-size="12.5" opacity="0" xml:space="preserve">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00000;0.44660;0.44667;0.76667;0.85333;1.00000" dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    ═══════════════════════════════════════
+  </text>
+
+  <!-- blinking cursor (visible while command "runs") -->
+  <rect x="397" y="56" width="7" height="14" fill="#58a6ff" opacity="0">
+    <!-- appear with command, blink, then hide when output starts -->
+    <animate attributeName="opacity"
+             values="0;0;1;1;1;0;1;0;1;0;0;0"
+             keyTimes="0;0.02600;0.02667;0.04667;0.05333;0.06000;0.06667;0.07333;0.08000;0.08667;0.09333;1"
+             dur="15s" repeatCount="indefinite" calcMode="discrete"/>
+  </rect>
+
+</svg>
